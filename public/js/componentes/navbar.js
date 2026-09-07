@@ -1,7 +1,7 @@
 navbar.innerHTML =`
 
     <div class="esquerda">
-      <div class="logo"><img src="assets/icon/logo.svg" alt=""></div>
+      <a class="logo" href="index.html"><img src="assets/icon/logo.svg" alt=""></a>
       <div class="links">
         <a href="">Início</a>
         <a href="">Sobre</a>
@@ -9,8 +9,8 @@ navbar.innerHTML =`
       </div>
     </div>
     <div class="entradas">
-      <a href="" class="login">Login</a>
-      <a href="" class="registro">Cadastre-se</a>
+      <a href="login.html" class="login">Login</a>
+      <a href="cadastro.html" class="registro">Cadastre-se</a>
     </div>
   
 `

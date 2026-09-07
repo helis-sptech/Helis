@@ -75,6 +75,10 @@
                  color: var(--azul);
                  font-weight: 600;
              }
+             a:hover{
+                    transform: translateY(-2px);
+                    color: var(--laranja);
+             }
          }
      }
 
@@ -184,6 +188,11 @@
                      font-weight: 600;
                      border-radius: 5px;
                  }
+                 .buttonSair:hover {
+                     transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+   
+                 }
              }
          }
      }
@@ -239,10 +248,11 @@
              i {
                  font-size: 30px;
              }
+             transition: 300ms;
          }
 
          :hover {
-             background-color: var(--azul);
+             background-color: #006fcad0;
              color: #fff;
          }
 
