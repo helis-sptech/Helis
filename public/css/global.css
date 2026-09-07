@@ -1,0 +1,254 @@
+ @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+ @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
+ /* Este arquivo contem configurações de style dos componentes que estão presentes em varias telas 
+ coloque apenas codigos que se repetem muito */
+
+ /* Por favor usem as variaveis para facilitar a configuração do modo escuro  */
+ /* Usem tbm o 'rem' inves do px, nas letras para facilitar a resposividade */
+ * {
+     --azul: #006FCA;
+     --azulEscuro: #004D8D;
+     --laranja: #FF7800;
+     --fundo: #F6F6F6;
+     --branco: #FFFFFF;
+     --cinza: #9C9C9C;
+     font-size: 1px;
+     margin: 0px;
+
+ }
+
+ body {
+     font-family: 'Lexend Deca', sans-serif;
+     background-color: var(--fundo);
+
+     * {
+         font-size: 16rem;
+     }
+ }
+
+ /* Usem tbm o 'rem' inves do 'px', nas letras para facilitar a resposividade */
+ /*
+ Exemplo de como usar 
+ .componente{
+    font-size: 30rem;
+    background-color:var(--F6F6F6);
+    color:var(--laranja);
+    border-color:var(--azul);
+ } */
+
+
+ .nav1 {
+     font-family: 'Inter', sans-serif;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding-inline: 40px;
+     padding-top: 20px;
+     position: sticky;
+     top: 0px;
+     left: 0px;
+    transition: 500ms;
+     .esquerda {
+         align-items: center;
+         display: flex;
+         gap: 100px;
+
+         .logo {
+             object-fit: cover;
+             width: 120px;
+
+             img {
+                 display: block;
+                 width: 100%;
+                 height: 100%;
+             }
+         }
+
+         .links {
+             display: flex;
+             gap: 50px;
+
+             a {
+                 text-decoration: none;
+                 font-size: 25rem;
+                 color: var(--azul);
+                 font-weight: 600;
+             }
+         }
+     }
+
+     .entradas {
+         background-color: var(--laranja);
+         display: flex;
+         border-radius: 26px;
+         padding: 0px;
+         margin: 0px;
+
+         a {
+             font-size: 25rem;
+             width: 230px;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             height: 53px;
+             border-radius: 26px;
+             text-decoration: none;
+             color: #fff;
+             font-weight: 600;
+             padding: 0px;
+             margin: 0px;
+         }
+
+         .login {
+             background-color: var(--branco);
+             color: var(--laranja);
+             margin-left: -2px;
+
+         }
+
+
+
+     }
+
+     .entradas:has(.login:hover) {
+         background-color: var(--branco);
+
+         a {
+             color: var(--laranja);
+         }
+
+         .login {
+             background-color: var(--laranja);
+             color: #fff;
+         }
+     }
+
+ }
+
+ .conteudo-preLogin {
+     width: 100%;
+    
+ }
+
+ main {
+     display: flex;
+
+     .main-posLogin {
+         flex: 1;
+
+         padding-inline: 20px;
+         padding-top: 30px;
+
+         .topo {
+             display: flex;
+             justify-content: space-between;
+
+             .titulo {
+                 color: var(--azulEscuro);
+                 font-size: 40rem;
+                 font-weight: 600;
+             }
+
+             .user {
+                 display: flex;
+                 align-items: center;
+                 gap: 40px;
+
+                 .userButton {
+                     border-radius: 50%;
+                     overflow: hidden;
+                     width: 65px;
+                     height: 65px;
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+
+                     img {
+                         object-fit: cover;
+                         width: 100%;
+                         height: 100%;
+                     }
+                 }
+
+                 .buttonSair {
+                     background-color: var(--laranja);
+                     height: 40px;
+                     width: 165px;
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                     text-decoration: none;
+                     color: #fff;
+                     font-size: 20px;
+                     font-weight: 600;
+                     border-radius: 5px;
+                 }
+             }
+         }
+     }
+
+     .conteudo {
+         width: 100%;
+         margin-top: 40px;
+     }
+ }
+
+ .sidebar {
+     box-sizing: border-box;
+     display: flex;
+     flex-direction: column;
+     padding: 20px 15px;
+     width: 400px;
+     height: 100vh;
+     position: sticky;
+     top: 0px;
+     left: 0px;
+
+     .logo {
+         object-fit: cover;
+         width: 100px;
+
+         img {
+             display: block;
+             width: 100%;
+             height: 100%;
+         }
+     }
+
+     .links {
+         display: flex;
+         flex-direction: column;
+         gap: 40px;
+         margin-top: 30px;
+
+         .link {
+             background-color: transparent;
+             color: var(--cinza);
+             padding-inline: 15px;
+             display: flex;
+             align-items: center;
+             justify-content: start;
+             border-radius: 25px;
+             height: 60px;
+             font-size: 26rem;
+             text-decoration: none;
+             font-weight: 500;
+             gap: 10px;
+
+             i {
+                 font-size: 30px;
+             }
+         }
+
+         :hover {
+             background-color: var(--azul);
+             color: #fff;
+         }
+
+         .ativo {
+             background-color: var(--azul);
+             color: #fff;
+         }
+     }
+ }
