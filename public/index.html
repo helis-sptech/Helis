@@ -4,21 +4,134 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <link rel="shortcut icon" href="assets/icon/logo.svg" type="image/x-icon">
+  <title>Helis | Início</title>
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/home.css">
 </head>
 <!-- Cada página possui seu próprio arquivo JS e CSS. Dê preferência ao uso dos arquivos existentes e, caso seja necessário, crie novos arquivos. -->
 
 <body>
-  <div class="nav1" id="navbar"></div>
-  <div class="conteudo-preLogin">
-    Coloque o conteudo da pagina aqui
-  </div>
-</body>
-<script src="js/componentes/navbar.js"></script>
-<script src="js/session.js"></script>
 
-<script src="js/langePage.js"></script>
+  <div class="nav1 nav-hero" id="navbar"></div>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Tecnologia que transforma<br>desafios logísticos em eficiência</h1>
+    </div>
+  </header>
+
+  <section class="stats-section" id="sobre">
+    <h2>Resultados que movem seu negócio.</h2>
+    <div class="stats-row">
+      <div class="stat">
+        <div class="num">2.5k</div>
+        <div class="label">lucro</div>
+      </div>
+      <div class="stat">
+        <div class="num">98%</div>
+        <div class="label">melhora</div>
+      </div>
+      <div class="stat">
+        <div class="num">2.5k</div>
+        <div class="label">consumidores</div>
+      </div>
+    </div>
+    <button class="btn-cta" type="button">Ver mais <span class="circle"><i class="fa-solid fa-arrow-right"></i></span></button>
+  </section>
+
+  <section class="features">
+
+    <div class="feature-row">
+      <div class="feature-media feature-media--foto">
+        <img src="assets/imgs/home.jpg" alt="Frota de caminhões estacionada em um pátio logístico ao entardecer">
+      </div>
+      <div class="feature-text">
+        <span class="feature-icon"><i class="fa-solid fa-route"></i></span>
+        <h3>Rastreamento em tempo real</h3>
+        <p>Acompanhe cada entrega do início ao fim com visibilidade total da frota. Nossa plataforma reúne dados de GPS, rotas e prazos em um único painel, permitindo decisões mais rápidas e reduzindo atrasos em toda a operação.</p>
+      </div>
+    </div>
+
+    <div class="feature-row reverse">
+      <div class="feature-media feature-media--azul">
+        <img src="assets/imgs/TruckBlue.png" alt="Ilustração de um caminhão de transporte de cargas">
+      </div>
+      <div class="feature-text">
+        <span class="feature-icon"><i class="fa-solid fa-chart-line"></i></span>
+        <h3>Gestão centralizada</h3>
+        <p>Planeje rotas, controle custos e monitore indicadores de desempenho em uma única interface. A equipe de operações ganha tempo e clareza para focar no que realmente importa: entregar com eficiência.</p>
+      </div>
+    </div>
+
+    <div class="feature-row">
+      <div class="feature-media feature-media--laranja">
+        <img src="assets/imgs/TruckRed.png" alt="Ilustração de um caminhão de entrega">
+      </div>
+      <div class="feature-text">
+        <span class="feature-icon"><i class="fa-solid fa-warehouse"></i></span>
+        <h3>Operação sem atritos</h3>
+        <p>Da separação ao carregamento, cada etapa do armazém é sincronizada com o sistema de transporte. Menos erros manuais, mais agilidade no despacho e total rastreabilidade do estoque em movimento.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="contact-section" id="contato">
+    <h2>Entre em contato conosco!</h2>
+    <div class="contact-card">
+      <form id="contact-form" novalidate>
+        <input type="email" id="email" name="email" placeholder="Seu email...">
+        <span class="field-error" id="email-error"></span>
+
+        <textarea id="message" name="message" placeholder="Mensagem..."></textarea>
+        <span class="field-error" id="message-error"></span>
+
+        <button type="submit" class="btn-submit">Enviar</button>
+      </form>
+      <div class="form-success" id="form-success"></div>
+    </div>
+  </section>
+
+  <footer class="rodape">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="index.html"><img src="assets/icon/logo.svg" alt="Logo Helis"></a>
+        <p>Tecnologia que conecta transportadoras, armazéns e clientes em uma única plataforma logística.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </div>
+      <div class="footer-col">
+        <h4>Produto</h4>
+        <a href="#">Rastreamento</a>
+        <a href="#">Gestão de frota</a>
+        <a href="#">Integrações</a>
+      </div>
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <a href="login.html">Login</a>
+        <a href="cadastro.html">Cadastre-se</a>
+        <a href="#">Política de privacidade</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Helis. Todos os direitos reservados.</span>
+      <span>Feito para transformar a logística brasileira.</span>
+    </div>
+  </footer>
+
+  <script src="js/componentes/navbar.js"></script>
+  <script src="js/session.js"></script>
+  <script src="js/langePage.js"></script>
+</body>
 
 </html>
