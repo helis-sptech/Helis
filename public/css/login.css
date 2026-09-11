@@ -14,3 +14,208 @@ As variaveis estão declaradas no arquivo global.css
 Não é necessário copiar as variaveis aqui ,apenas use o var(--variavel);
     
  */
+
+ * {
+   border: 0px solid red;
+ }
+
+ body {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+   background-color: var(--fundo);
+ }
+
+ main {
+   flex: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+   .quadrado-grande {
+      display: flex;
+      flex-direction: row;
+      height: 700rem;
+      width: 85%;
+      margin-bottom: 30rem;
+      background-color: var(--branco);
+      border-radius: 20rem;
+      box-shadow: 0 10rem 20rem rgba(0, 0, 0, 0.25);
+      
+      .quadrado-1 {
+         display: flex;
+         width: 40%;
+         overflow: hidden;
+         border-radius: 20rem 0 0 20rem;
+         position: relative;
+         align-items: end;
+
+         .imagem {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: right center;
+            display: block;
+         }
+
+         .texto-eduardo {
+            position: absolute;
+            margin: 0 0 50rem 30rem;
+            font-size: 35rem;
+            font-weight: bold;
+            color: var(--branco);
+            z-index: 1;
+         }
+
+         &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            box-shadow: inset 0 0 120rem 100rem rgba(0, 0, 0, 0.5);
+         }
+      }
+
+      .quadrado-2 {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 60%;
+
+         .informacoes {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            gap: 40rem;
+
+            .titulo {
+               font-size: 50rem;
+               color: var(--azul);
+               margin-bottom: 20rem;
+            }
+
+            .links {
+               color: var(--laranja);
+               text-decoration: none;
+            }
+
+            .links:hover {
+               text-decoration: underline;
+            }
+
+            .campo {
+               display: flex;
+               flex-direction: column;
+               width: 50%;
+               gap: 10rem;
+
+               .label-title {
+                  font-size: 18rem;
+                  font-weight: bold;
+               }
+
+               .input-senha-wrapper {
+                  position: relative;
+                  display: flex;
+                  align-items: center;
+
+                  .input {
+                     display: flex;
+                     width: 100%;
+                     border-radius: 4rem;
+                     height: 45rem;
+                     border-radius: 8rem;
+                     box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.35);
+                     padding: 10rem 15rem;
+                     padding-right: 40rem;
+                  }
+
+                  #toggle-senha {
+                     position: absolute;
+                     right: 12rem;
+                     color: var(--azul);
+                     cursor: pointer;
+                  }
+
+                  i {
+                     position: absolute;
+                     right: 12rem;
+                     color: var(--azul);
+                     font-size: 20rem;
+                  }
+               }
+
+               .input-email-wrapper {
+                  position: relative;
+                  display: flex;
+                  align-items: center;
+
+                  .input {
+                     width: 100%;
+                     padding-right: 40rem; /* espaço pro ícone não ficar em cima do texto */
+                  }
+
+                  i {
+                     position: absolute;
+                     right: 12rem;
+                     color: var(--azul);
+                     font-size: 20rem;
+                  }
+               }
+
+               .input {
+                  display: flex;
+                  border-radius: 4rem;
+                  height: 45rem;
+                  border-radius: 8rem;
+                  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.35);
+                  padding: 10rem 15rem;
+               }
+
+               .input:focus {
+                  outline: none;
+               }
+
+               .input::placeholder {
+                  color: var(--cinza);
+               }
+            }
+
+            .campo-entrar {
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               height: 10%;
+               width: 100%;
+
+               .botao-entrar {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  height: 95%;
+                  width: 40%;
+                  border-radius: 5rem;
+                  color: var(--branco);
+                  background-color: var(--azul);
+
+                  .titulo-botao {
+                     font-size: 30rem;
+                  }
+               }
+
+               .botao-entrar:hover {
+                  background-color: var(--laranja);
+                  transition: 300ms;
+                  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.30);
+               }
+            }
+
+            .campo-cadastrar {
+               color: var(--cinza);
+            }
+         }
+      }
+   }
+ }
