@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
@@ -12,12 +12,53 @@
 
 <body>
   <div class="nav1" id="navbar"></div>
-  <div class="conteudo-preLogin">
-    Coloque o conteudo da pagina aqui
-  </div>
+  <main>
+    <div class="quadrado-grande">
+      <div class="quadrado-1">
+        <img src="./assets/imgs/login.jpg" alt="" class="imagem">
+        <span class="texto-eduardo">
+          Tecnologia que transforma <br>
+          desafios logísticos em eficiência. 
+        </span>
+      </div>
+      <div class="quadrado-2">
+        <div class="informacoes">
+          <h1 class="titulo">
+            Acesse sua conta
+          </h1>
+          <div class="campo">
+            <label for="ipt_user" class="label-title">E-mail ou CNPJ</label>
+            <div class="input-email-wrapper">
+              <input type="text" id="ipt_user" class="input" placeholder="Insira seu email">
+              <i class="fa-regular fa-circle-user"></i>
+            </div>
+          </div>
+          <div class="campo">
+            <label for="ipt_password" class="label-title">Senha</label>
+            <div class="input-senha-wrapper">
+              <input type="password" id="ipt_password" class="input" placeholder="Insira sua senha">
+              <i class="fa-solid fa-eye-slash" id="toggle-senha"></i>
+            </div>
+            <a href="" class="links">Esqueceu a senha?</a>
+          </div>
+          <div class="campo-entrar">
+            <button id="botao_entrar" class="botao-entrar">
+              <h2 class="titulo-botao">
+                Entrar
+              </h2>
+            </button>
+          </div>
+          <div class="campo-cadastrar">
+            <span class="nao-tem">Não tem conta?</span><a href="cadastro.html" class="links">Cadastre-se</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/componentes/navbar.js"></script>
+  <script src="js/session.js"></script>
+  <script src="js/login.js"></script>
 </body>
-<script src="js/componentes/navbar.js"></script>
-<script src="js/session.js"></script>
-<script src="js/login.js"></script>
 
 </html>
