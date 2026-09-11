@@ -4,16 +4,238 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Faça seu login</title>
+  <title>Cadastro</title>
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/cadastro.css">
 </head>
-<!-- Cada página possui seu próprio arquivo JS e CSS. Dê preferência ao uso dos arquivos existentes e, caso seja necessário, crie novos arquivos. -->
+
 <body>
   <div class="nav1" id="navbar"></div>
   <div class="conteudo-preLogin">
-    Coloque o conteudo da pagina aqui
-  </div>
+
+    <div class="titulo">
+      <h1>Cadastro de Nova Empresa</h1>
+    </div>
+
+    <div class="texto">
+      <p>Preencha as informações abaixo para criar sua conta</p>
+    </div>
+
+    <div class="etapas">
+
+      <div class="etapa">
+        <span id="etapa1" class="etapa-atual">
+          1. Informações da empresa
+        </span>
+      <div class="barra-atual" id="barra1"></div>
+      </div>
+
+    <div class="etapa">
+        <span id="etapa2">
+          2. Endereço 
+        </span>
+        <div class="barra" id="barra2"></div>
+     </div>
+
+     <div class="etapa">
+        <span id="etapa3">
+          3. Responsável
+        </span>
+     <div class="barra" id="barra3"></div>
+     </div>
+     </div>
+
+    </div>
+    
+    <div class="card-cadastro">
+
+    <form id="formCadastro">
+
+    <div id="conteudo-informacoes">
+    <div class="card-cabecalho">
+    <div class="icone">
+    <img src="./assets/icon/empresa.svg">
+    </div>
+
+    <div class="texto-card">
+
+    <h2>Informações da Empresa</h2>
+
+    <p>Dados necessários para a identificação da sua empresa</p>
+
+    </div>
+    </div>
+
+    <div class="formulario-cadastro">
+
+    <div class="campo">
+
+      <h4>CNPJ *</h4>
+        
+      <input type="text" id="input_cnpj" placeholder="00.000.000/0000-00">
+
+    </div>
+
+      <div class="campo">
+        
+       <h4>Razão Social *</h4>
+        
+        <input type="text" id="input_razao" placeholder="Insira a razão social da empresa">
+
+      </div>
+
+      <div class="campo">
+
+        <h4>Nome Fantasia *</h4>
+        
+        <input type="text" id="input_nomefantasia" placeholder="Insira o nome fantasia da empresa">
+
+      </div>
+
+       <div class="campo">
+
+        <h4>E-mail *</h4>
+        
+        <input type="text" id="input_email" placeholder="email@email.com">
+
+      </div>
+
+      <div class="campo">
+
+       <h4>Senha *</h4>
+        
+        <input type="password" id="input_senha" placeholder="senha">
+
+      </div>
+
+      <div class="campo">
+
+        <h4>Telefone *</h4>
+        
+        <input type="text" id="input_telefone" placeholder="(00) 00000-0000">
+
+      </div>
+
+    </div>
+
+    <div class="botoes">
+      <button type="button" class="botao-avancar"onclick="avancar()">Avançar</button>
+    </div>
+    </div>
+   
+    <div id="conteudo-endereco" style="display:none;">
+    <div class="card-cabecalho">
+    <div class="icone">
+    <img src="./assets/icon/localizacao.svg">
+    </div>
+
+    <div class="texto-card">
+
+      <h2>Endereço da empresa</h2>
+
+      <p>Dados necessários para a identificação da sua empresa</p>
+
+      </div>
+    </div>
+    <div class="formulario-cadastro">
+
+      <div class="campo">
+        <h4>CEP</h4>
+        <input type="text" id="input_cep" placeholder="00000-00">
+      </div>
+
+      <div class="campo">
+        <h4>Logradouro</h4>
+        <input type="text" id="input_logradouro" placeholder="Insira o logradouro da empresa">
+      </div>
+
+      <div class="campo">
+        <h4>Número</h4>
+        <input type="text" id="input_numero"placeholder="000">
+      </div>
+
+      <div class="campo">
+        <h4>Complemento (opcional)</h4>
+        <input type="text" id="input_complemento" placeholder="000">
+      </div>
+
+      <div class="campo">
+        <h4>Bairro</h4>
+        <input type="text" id="input_bairro" placeholder="Insira o bairro da empresa">
+      </div>
+
+      <div class="campo">
+        <h4>Cidade</h4>
+        <input type="text" id="input_cidade" placeholder="Insira cidade da empresa">
+      </div>
+      </div>
+
+    <div class="botoes">
+      <button type="button" class="botao-volta" onclick="voltar()">Voltar</button>
+    
+      <button type="button" class="botao-avancar" onclick="avancar2()">Avançar</button>
+    </div>
+    </div>
+
+    <div id="conteudo-responsavel" style="display:none;">
+
+      <div class="card-cabecalho">
+      <div class="icone">
+      <img src="./assets/icon/responsavel.svg">
+      </div>
+
+     <div class="texto-card">
+
+       <h2>Responsável</h2>
+
+      <p>Dados necessários para a identificação da sua empresa</p>
+       </div>
+       </div>
+
+    <div class="formulario-cadastro">
+
+      <div class="campo">
+        <h4>CPF</h4>
+        <input type="text" id="input_cpf" placeholder="00000-00">
+      </div>
+
+      <div class="campo">
+        <h4>Nome</h4>
+        <input type="text" id="input_nomeresponsavel" placeholder="Insira nome do responsável ">
+      </div>
+
+      <div class="campo">
+        <h4>E-mail</h4>
+        <input type="text" id="input_emailresponsavel" placeholder="email@email.com">
+      </div>
+
+       <div class="campo">
+        <h4>Telefone</h4>
+        <input type="text" id="input_telefoneresponsavel" placeholder="(00) 00000-0000">
+      </div>
+
+       <div class="campo">
+        <h4>Cargo</h4>
+        <input type="text" id="input_cargo" placeholder="Insira cargo do responsável">
+      </div>
+
+       <div class="campo">
+        <h4>Senha</h4>
+        <input type="text" id="input_senharesponsavel" placeholder="senha">
+      </div>
+      </div>
+      
+
+      <div class="botoes">
+      <button type="button" class="botao-volta" onclick="voltar2()">Voltar</button>
+
+      <button type="button" class="botao-avancar" onclick="finalizar()">Finalizar</button>
+
+      </div>
+
+    </form>
+    </div>
+
 </body>
 <script src="js/componentes/navbar.js"></script>
 <script src="js/session.js"></script>
