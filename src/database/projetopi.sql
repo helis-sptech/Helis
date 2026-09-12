@@ -81,20 +81,6 @@ constraint fkMotorista foreign key (motoristaId) references usuario(idUsuario),
 constraint fkRegistrador foreign key (usuarioId) references usuario(idUsuario)
 );
 
-create table enderecoFrete(
-idEnd int primary key auto_increment,
-enderecoSaida varchar(45),
-enderecoEntrega varchar(45),
-freteId int,
-cep char(8),
-numero varchar(5),
-logradouro varchar(45),
-complemento varchar(45),
-bairro varchar(45),
-cidade varchar(45),
-constraint fkFrete foreign key (freteId) references frete(idFrete)
-);	
-
 create table kmrodado(
 freteId int primary key,
 kmPercorrido int,
