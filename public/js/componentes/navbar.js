@@ -4,8 +4,8 @@ navbar.innerHTML =`
       <a class="logo" href="index.html"><img src="assets/icon/logo.svg" alt=""></a>
       <div class="links">
         <a href="">Início</a>
-        <a href="">Sobre</a>
-        <a href="">Contato</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
       </div>
     </div>
     <div class="entradas">
