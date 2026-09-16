@@ -242,6 +242,11 @@
    .titulo h1 {
    font-size: 22rem;
    }
+   .etapa{
+     span{
+       font-size: 8rem;
+     }
+   }
 
    .formulario-cadastro {
    grid-template-columns: 1fr;
