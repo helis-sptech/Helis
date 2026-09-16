@@ -1,7 +1,7 @@
 navbar.innerHTML =`
 
     <div class="esquerda">
-      <a class="logo" href="index.html"><img src="assets/icon/logo.svg" alt=""></a>
+      <a class="logo" href="index.html"><img src="assets/icon/logo.png" alt=""></a>
       <div class="links">
         <a href="">Início</a>
         <a href="#sobre">Sobre</a>
