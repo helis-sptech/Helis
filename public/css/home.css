@@ -24,7 +24,7 @@ Não é necessário copiar as variaveis aqui ,apenas use o var(--variavel);
 
  .hero {
    position: relative;
-   min-height: 460rem;
+   min-height: 590rem;
    display: flex;
    align-items: flex-end;
    background-image:
@@ -32,7 +32,7 @@ Não é necessário copiar as variaveis aqui ,apenas use o var(--variavel);
      url('../assets/imgs/home.jpg');
    background-size: cover;
    background-position: center;
-
+  margin-top: -130px;
    .hero-content {
      padding: 90rem 44rem 70rem;
      max-width: 900rem;
