@@ -16,7 +16,7 @@ Não é necessário copiar as variaveis aqui ,apenas use o var(--variavel);
  */
 
  * {
-   border: 0px solid red;
+   border: 0px solid rgb(17, 0, 255);
  }
 
  body {
@@ -33,6 +33,7 @@ Não é necessário copiar as variaveis aqui ,apenas use o var(--variavel);
    align-items: center;
    
    .quadrado-grande {
+      
       display: flex;
       flex-direction: row;
       height: 700rem;
