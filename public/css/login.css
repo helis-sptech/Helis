@@ -15,10 +15,6 @@ Não é necessário copiar as variaveis aqui ,apenas use o var(--variavel);
     
  */
 
- * {
-   border: 0px solid rgb(17, 0, 255);
- }
-
  body {
    display: flex;
    flex-direction: column;
@@ -220,3 +216,71 @@ Não é necessário copiar as variaveis aqui ,apenas use o var(--variavel);
       }
    }
  }
+
+ /* ===== Responsivo ===== */
+
+@media (max-width: 800px) {
+   main .quadrado-grande {
+      width: 90%;
+   }
+}
+
+@media (max-width: 600px) {
+   main {
+      padding: 20rem 0;
+      align-items: flex-start;
+   }
+
+   main .quadrado-grande {
+      flex-direction: column;
+      width: 90%;
+      height: auto;
+      margin-bottom: 20rem;
+   }
+
+   main .quadrado-grande .quadrado-1 {
+      width: 100%;
+      height: 160rem;
+      border-radius: 20rem 20rem 0 0;
+   }
+
+   main .quadrado-grande .quadrado-1 .imagem {
+      object-position: center;
+   }
+
+   main .quadrado-grande .quadrado-1 .texto-eduardo {
+      font-size: 18rem;
+      margin: 0 0 18rem 18rem;
+   }
+
+   main .quadrado-grande .quadrado-2 {
+      width: 100%;
+      padding: 32rem 0;
+   }
+
+   main .quadrado-grande .quadrado-2 .informacoes {
+      gap: 24rem;
+   }
+
+   main .quadrado-grande .quadrado-2 .informacoes .titulo {
+      font-size: 24rem;
+      margin-bottom: 0;
+   }
+
+   main .quadrado-grande .quadrado-2 .informacoes .campo {
+      width: 88%;
+   }
+
+   main .quadrado-grande .quadrado-2 .informacoes .campo-entrar {
+      height: auto;
+   }
+
+   main .quadrado-grande .quadrado-2 .informacoes .campo-entrar .botao-entrar {
+      width: 88%;
+      height: 48rem;
+   }
+
+   main .quadrado-grande .quadrado-2 .informacoes .campo-entrar .botao-entrar .titulo-botao {
+      font-size: 22rem;
+   }
+}
