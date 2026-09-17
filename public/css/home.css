@@ -231,10 +231,11 @@ Não é necessário copiar as variaveis aqui ,apenas use o var(--variavel);
 
      input,
      textarea {
+      box-sizing: border-box;
        width: 100%;
        border: none;
        background-color: var(--branco);
-       box-shadow: 0 2rem 6rem rgba(0, 0, 0, .12);
+       box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.053);
        border-radius: 12rem;
        padding: 16rem 20rem;
        font-size: 15rem;
@@ -358,28 +359,7 @@ Não é necessário copiar as variaveis aqui ,apenas use o var(--variavel);
      }
    }
 
-   .footer-social {
-     display: flex;
-     gap: 12rem;
-     margin-top: 6rem;
-
-     a {
-       width: 36rem;
-       height: 36rem;
-       border-radius: 50%;
-       background-color: rgba(255, 255, 255, .08);
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       font-size: 15rem;
-       margin-bottom: 0;
-     }
-
-     a:hover {
-       background-color: var(--laranja);
-       color: var(--branco);
-     }
-   }
+   
 
    .footer-bottom {
      border-top: 1rem solid rgba(255, 255, 255, .1);
